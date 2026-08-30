@@ -1,0 +1,4 @@
+interface:
+  display_name: "Research Spec Loop"
+  short_description: "Align research design, implementation, and evidence"
+  default_prompt: "Use $research-spec-loop in audit mode to identify authority and evidence drift in this research repository."
