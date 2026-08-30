@@ -1,0 +1,4 @@
+interface:
+  display_name: "Academic Writing"
+  short_description: "Evidence-bounded scientific writing discipline"
+  default_prompt: "Use $academic-writing to draft or edit scientific prose with evidence-bounded claims and consistent technical meaning."
