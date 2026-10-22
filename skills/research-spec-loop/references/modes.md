@@ -2,6 +2,10 @@
 
 Use only the procedure for the selected mode. The repository's instructions
 and the user's allowed scope override these defaults.
+Apply the reading scope selected in the skill entrypoint. Only when Knowledge
+Hygiene applies, read the relevant sections of
+[knowledge-hygiene.md](knowledge-hygiene.md); this is not another mode or a
+default preflight for the procedures below.
 
 ## Audit
 
@@ -11,10 +15,12 @@ authorizes implementation.
 1. **Record the gate.** Capture worktree status and recent history before
    inspection. If the user specified an expected branch, commit, or clean
    state, enforce that gate before continuing.
-2. **Read the authority entrypoints.** Read the effective agent rules and the
-   repository's existing docs index, live status owner, current research spec,
-   decision register, and representative protocol/result/historical surfaces.
-   Keep the scan targeted to the requested facts.
+2. **Read the affected authorities.** Follow the effective agent rules and
+   locate owners of the facts under review, using the existing index/status
+   entrypoints as required by the repository. Read the relevant spec, decision
+   and evidence for research-design or authority questions. A wording-only
+   review does not require unrelated specs, all historical records or a full
+   repository inventory; read only necessary owner/consumer sections.
 3. **Map mutable facts.** For each relevant fact, record its current owner,
    consumers, lifecycle, and evidence state. Distinguish a duplicated mutable
    value from a stable pointer or a deliberately frozen historical snapshot.
@@ -53,12 +59,14 @@ Implement mode requires an authorized, owner-scoped change.
 2. **Resolve the changed fact before editing.** State the fact, its single
    owner, its present lifecycle/evidence state, and the dependent consumers
    that may need synchronization.
-3. **Check decision and design authority.** A proposal is not the current
-   design. Treat lifecycle and evidence as separate axes: a `Current` decision
-   means accepted design, not implementation or validation. If the requested
-   change alters accepted research design, confirm the required decision state
-   and update the authoritative spec within scope. If the task changes only
-   implementation, do not manufacture a design change or a new decision.
+3. **Check decision and design authority when affected.** A proposal is not
+   the current design. Treat lifecycle and evidence as separate axes: a
+   `Current` decision means accepted design, not implementation or validation.
+   For a research-design/decision change, read the relevant accepted spec,
+   decision and evidence, confirm the required decision state, and update the
+   authoritative spec within scope. Do not use code presence to settle a
+   conflict. If only implementation or wording changes, do not manufacture a
+   design change, decision update or unrelated authority review.
 4. **Reconcile requirement changes before continuing.** Use a light
    `retain / revise / remove / historical / replace` check across affected
    design, implementation, tests, configs, protocols, results, and current
@@ -105,6 +113,8 @@ Implement mode requires an authorized, owner-scoped change.
    evidence. Formal experiment evidence additionally requires explicit
    authorization, the applicable protocol, required provenance/metadata, and
    satisfaction of its artifact contract.
+   For wording-only docs changes, use relevant diff/link checks; do not run
+   pytest or an unrelated suite unless the task or repository requires it.
 9. **Inspect the final diff.** Confirm allowed files only, no accidental result
    numbers or scientific interpretations changed, and no mutable state was
    duplicated into consumers.

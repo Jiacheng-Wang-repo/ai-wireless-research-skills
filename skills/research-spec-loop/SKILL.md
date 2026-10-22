@@ -1,6 +1,6 @@
 ---
 name: research-spec-loop
-description: "Keep authority, lifecycle, and evidence aligned in research code repositories. Use for a targeted governance audit, an owner-scoped research change, or a closeout that must reconcile accepted design, implementation, tests, configs, protocols, results, decisions, live status, and historical provenance. Adapt to the repository's existing authority surfaces instead of imposing a directory layout."
+description: "Keep research authority, decision lifecycle, and evidence aligned during scoped audits, changes, and closeout. Also use for explicitly requested knowledge cleanup, document deduplication, archive/retirement, or worktree lifecycle review. Ordinary wording edits, routine refactoring, and simple Git sync do not require knowledge hygiene."
 ---
 
 # Research Spec Loop
@@ -24,7 +24,19 @@ completion checks. If a change request also asks for final reconciliation,
 perform `implement` and finish with its closeout checks; do not invent another
 mode or workflow layer.
 
-Read [references/modes.md](references/modes.md) after selecting the mode.
+Read the selected procedure in [references/modes.md](references/modes.md),
+limiting its checks to the task's reading scope:
+
+| Reading scope | When it applies | Read |
+|---|---|---|
+| Lightweight | Small docs-only wording changes or minor refinement without a research-design change | The affected passage/owner and only necessary direct consumers. |
+| Research authority | Research design, accepted-specification or Journal/decision questions | The relevant accepted spec, decision and supporting evidence. |
+| Knowledge Hygiene | Explicit knowledge cleanup/deduplication, archive, retirement or worktree lifecycle work | Relevant sections of [knowledge-hygiene.md](references/knowledge-hygiene.md). |
+
+These scopes do not add modes or authorize actions. Ordinary prose polishing,
+routine code refactoring and simple Git sync do not activate Knowledge Hygiene.
+Do not turn either lightweight work or routine research discussion into a full
+inventory or cleanup workflow; follow the repository's applicable gates.
 
 ## Discover roles before paths
 
