@@ -1,0 +1,23 @@
+# Local behavior checks and working directories
+/evals/
+/scripts/
+/tests/
+/.github/
+/scratch/
+/tmp/
+/backup/
+/output/
+
+# Python caches and logs
+__pycache__/
+*.pyc
+*.pyo
+*.log
+
+# Local configuration and credentials
+.env
+.env.*
+!.env.example
+!.env.template
+/credentials/
+/secrets/

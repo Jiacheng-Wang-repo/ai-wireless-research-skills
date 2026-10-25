@@ -26,6 +26,10 @@ Do not use a general writing preference to change an objective, method,
 experimental protocol, numerical value, attribution boundary, or accepted
 technical meaning.
 
+Resolve structural and evidential problems in the requested scope before
+sentence-level polish. If a claim is unsettled, flag or resolve its evidence
+dependency before improving its presentation; continue independent edits.
+
 ## Decide What Belongs in the Manuscript
 
 Admit content to the main scientific narrative only when it performs a
@@ -171,36 +175,40 @@ taxonomy includes them.
   interpretation.
 - Prefer a strong claim with a precise scope over a weak claim with a broad
   scope. If the evidence directly supports a bounded strong conclusion, state
-  it directly; do not replace it with generic language merely to sound
-  cautious. For example, do not weaken `consistently outperforms X across the
+  it directly; do not retreat to `promising` or `potentially useful` merely to
+  sound cautious. For example, do not weaken `consistently outperforms X across the
   tested network sizes` to `achieves competitive performance under various
   settings` when the former is directly supported.
-- Use terms such as `suggests`, `indicates`, `is consistent with`, and `under
-  the evaluated settings` when the inference is interpretive. Do not add
-  qualifiers mechanically when a direct bounded statement is already accurate.
-- When presenting a scientific result or conclusion, lead with the strongest
-  conclusion the evidence supports. Once the relevant experimental or
-  methodological scope is clear in the surrounding text, do not repeat
-  qualifiers such as `under the evaluated settings` unless needed to prevent a
-  materially broader interpretation.
-- Let evidence discipline constrain claim strength without dominating the
-  scientific narrative. Keep audit-level traceability and provenance in
-  evidence records or working material unless those details are scientifically
-  necessary for the reader; do not turn manuscript prose into an audit trail.
+- Use terms such as `suggests`, `indicates`, or `is consistent with` when
+  needed to distinguish an interpretation from a direct observation. Do not
+  hedge an interpretation merely because it is interpretive; calibrate its
+  strength to the supporting evidence.
+  Lead with the strongest supported conclusion. Once the surrounding text makes
+  its scope clear, repeat `under the evaluated settings` or similar qualifiers
+  only when omission would materially broaden the claim.
 - Separate broader implications from demonstrated conclusions and label
   untested explanations or extensions as hypotheses or future work.
 
 ## Control Defensive Qualification
 
-Before introducing a caveat, limitation, negative comparison, or defensive
-qualification, require at least one of the following:
+Apply this control to the requested manuscript text, including supplements,
+captions and table notes. Judge content by its scientific function, not words
+such as `may`, `limitation` or `risk`. Before adding or retaining a caveat,
+limitation, negative comparison or defensive explanation, require at least one
+of the following:
 
 1. Without it, the scientific claim would be false or materially misleading.
 2. It is explicitly required by a reviewer, editor, venue rule, or applicable
    paper-specific instruction, and the issue appropriately belongs in the
    manuscript rather than response-only material.
-3. The scope boundary is necessary for the reader to interpret the result
-   correctly.
+3. It supplies information needed to interpret or reproduce the work correctly.
+
+Preserve mathematical assumptions and feasibility conditions; system-model,
+data and experimental scope; necessary statistics and methods; genuine
+uncertainty, important limitations, counterexamples and alternative explanations;
+and negative results material to the conclusion. Keep required disclosures,
+including actual tool/AI use. Naming a tool or a process does not make a
+necessary disclosure or reproducibility fact defensive.
 
 If none applies, omit the qualification. Do not convert scope into weakness.
 For example, prefer the neutral scientific form `We study learning-based
@@ -209,9 +217,25 @@ is limited to learning-based resource allocation under the stated system
 model` unless the limitation itself is scientifically material to the
 argument.
 
-Once scope is clear, do not repeat qualifiers mechanically. Do not append
-generic limitations or future-work statements merely for completeness, and do
-not anticipate hypothetical reviewer attacks inside the manuscript.
+Remove language serving only to protect the author, model, tool or process:
+effort claims, generic disclaimers, pre-emptive excuses and answers to imagined
+objections that do not affect scientific correctness. Do not append limitations
+or future work just to signal rigor. Follow the evidence calibration above;
+neither confident tone nor caution justifies changing claim strength.
+
+Internal checks, verification verdicts, version status and development history
+are not scientific evidence merely because they document careful work. Keep
+audit traceability in existing working records. Where process detail defines
+the method or enables reproduction, state the actual procedure in the relevant
+Methods, supplement or required statement; retain necessary identifiers and
+versions. Do not strip substantive methodology because it sounds procedural.
+
+When a sentence mixes a necessary condition with self-protection, remove only
+the protective framing. Resolve ambiguity with a precise definition; state
+needed scope where it acts, preserving self-contained understanding. Compress
+or relocate excess explanation so it does not obscure the contribution, without
+changing numbers, logical conditions, uncertainty or technical meaning. Do not
+create or require a separate `writing-governance.md`.
 
 ## Align Comparisons with the Scientific Claim
 

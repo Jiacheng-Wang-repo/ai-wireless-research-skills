@@ -6,8 +6,11 @@ description: Draft, revise, or audit journal revision letters, rebuttals, review
 # Reviewer Response Writing
 
 Build on the reusable scientific-writing baseline rather than duplicating it.
-Read `../academic-writing/SKILL.md` completely before drafting or auditing a
-response.
+Read [academic-writing](../academic-writing/SKILL.md) completely before drafting
+or auditing a response. Its manuscript guidance against imagined objections
+does not remove the obligation to answer a reviewer's actual concern. Retain
+the technical explanation, evidence and reasoned rebuttal needed for complete
+coverage; this skill owns response stance and truthful completion wording.
 
 ## Establish Authority
 
